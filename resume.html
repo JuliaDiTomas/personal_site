@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Julia DiTomas</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to Font Awesome for the icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 900px;
+      margin-top: 50px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: 1.5em;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    .resume-content {
+      margin-bottom: 30px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #343a40;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer a {
+      color: #ffffff;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Julia DiTomas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobbies.html">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+      </ul>
+      <i class="fab fa-cat"></i>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container resume-content">
+    <div class="header">
+      <h1>Julia DiTomas</h1>
+      <a href="../resources/Resume.pdf" target="_blank" download="resume.pdf">
+        <button>Download Resume</button>
+      </a>
+      <!-- <p><a href="linkedin.com/in/julia-ditomas-b23a31255" target="_blank">LinkedIn Profile</a></p>
+      <p><a href="https://github.com/JuliaDiTomas" target="_blank">GitHub Profile</a></p> -->
+    </div>
+
+    <!-- Resume Sections -->
+    <div class="section">
+      <p><strong>Interests:</strong> RF/antenna design, construction, environmental science, communication protocols, robotics, AI, mathematics</p>
+      <p><strong>Skills:</strong> Python, SQL, C/C++, Matlab, Linux, UI design, Arduino, data analysis, RF analysis, AWR Microwave Office, analog circuits, debugging/troubleshooting, technical writing, collaboration, SIMetrix, FEKO, Verilog, Altium Designer</p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <p><strong>University of Colorado Boulder, Bachelor of Science</strong></p>
+      <p>Anticipated Graduation: May 2025</p>
+      <p>In-Progress Major: Electrical and Computer Engineering</p>
+      <p>In-Progress Minor: Computer Science</p>
+      <p><strong>Fairview High School, Boulder, Colorado, Class of 2021</strong></p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+      <p><strong>Maxar Technologies: Absolute Radiometric Calibration Technician</strong> -- May 2023 - present</p>
+      <ul>
+        <li>Collected field data to perform and improve each sensor’s calibration.</li>
+        <li>Designed and built a camera system to monitor weather at the field site.</li>
+        <li>Built a Python Dash app for visualizing image orders and deliveries.</li>
+        <li>Built a Python Dash app to monitor and display sensor health.</li>
+      </ul>
+
+      <p><strong>Julia’s Painted Pet Art: Artist and Owner</strong> -- May 2021 - August 2024</p>
+      <ul>
+        <li>Designed and built a website, paintedpetart.com, and operated a custom pet portrait business.</li>
+        <li>Learned entrepreneurship, communication, and visual design.</li>
+      </ul>
+
+      <p><strong>University of Colorado: Discovery Learning Apprentice</strong> -- August 2022 - May 2023</p>
+      <ul>
+        <li>Conducted research for LunaNet project simulating an emergency alert system for astronauts.</li>
+        <li>Programmed with Python and worked with software-defined radio.</li>
+      </ul>
+
+      <p><strong>University of Colorado: Teaching Facilitator</strong> -- August 2022 - December 2022</p>
+      <ul>
+        <li>Hosted office hours and assisted students in a C++ and Matlab intro course.</li>
+        <li>Developed teaching and communication skills.</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" style="margin-bottom:100px">
+      <div class="section-title">Projects</div>
+      <p><strong>Environmental Variance Analyzer (EVA)</strong> -- September 2024 - present</p>
+      <ul>
+        <li>Developing a battery-powered environmental sensing module for NASA’s STELLA project.</li>
+      </ul>
+
+      <p><strong>Digital Tilt Maze Game</strong> -- March 2024 - May 2024</p>
+      <ul>
+        <li>Programmed an STM32F4 microcontroller for a tilt maze game in a real-time operating system course.</li>
+      </ul>
+
+      <p><strong>Remote-Controlled Robot with Custom Controller</strong> -- August 2023 - December 2023</p>
+      <ul>
+        <li>Built a Bluetooth-controlled robot with Arduino and feedback control systems.</li>
+      </ul>
+
+      <p><strong>Repurposed Materials Antenna Build and Analysis</strong> -- April 2024 - May 2024</p>
+      <ul>
+        <li>Built an antenna out of a wine rack, modeled it, and compared measurements with a vector network analyzer.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer with Social Media Icons -->
+  <div class="footer">
+    <a href="https://linkedin.com/in/julia-ditomas-b23a31255" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/JuliaDiTomas" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
+  <!-- Link to Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
