@@ -31,6 +31,7 @@
               background-color: white;
               padding: 20px;
               box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+              margin: auto;
           }
           canvas {
               width: 100%;
@@ -118,7 +119,7 @@
           const ctx = canvas.getContext('2d');
   
           // Load the PDF
-          const url = './resources/Julia DiTomas Board 1 Report.pdf'; // Replace with the path to your PDF
+          const url = './resources/Julia DiTomas Board 2 Report.pdf'; // Replace with the path to your PDF
           pdfjsLib.getDocument(url).promise.then(function(pdf) {
               pdfDoc = pdf;
               totalPages = pdf.numPages;
