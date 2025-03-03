@@ -93,9 +93,11 @@
           </div>
       </div>
       <div>
-        <button id="prev-btn" onclick="getPDF('./resources/Julia DiTomas Board 1 Report.pdf')">Board 1 Report</button>
-        <button id="prev-btn" onclick="getPDF('./resources/Julia DiTomas Board 2 Report.pdf')">Board 2 Report</button>
-
+        <button id="brd1_button" onclick="getPDF('./resources/Julia DiTomas Board 1 Report.pdf')">Board 1 Report</button>
+        <button id="brd2_button" onclick="getPDF('./resources/Julia DiTomas Board 2 Report.pdf')">Board 2 Report</button>
+        <button id="lab2_button" onclick="getPDF('./resources/Julia DiTomas - ECEN 3730 Lab 2.pdf')">Lab 2 Report</button>
+        <button id="lab5_button" onclick="getPDF('./resources/ECEN 3730 Lab 5 - Julia DiTomas.pdf')">Lab 5 Report</button>
+        <button id="lab15_button" onclick="getPDF('./resources/Julia DiTomas Lab 15 ECEN 3730.pdf')">Lab 15 Report</button>
 
       </div>
 
@@ -135,6 +137,7 @@
           // Load the PDF
         function getPDF(url){
           //const url = './resources/Julia DiTomas Board 1 Report.pdf'; // Replace with the path to your PDF
+          currentPage = 1;
           pdfjsLib.getDocument(url).promise.then(function(pdf) {
               pdfDoc = pdf;
               totalPages = pdf.numPages;
