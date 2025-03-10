@@ -84,23 +84,26 @@
       </a>
     </div>
   </nav>
-  
-      <div class="carousel-container">
+  <div class="row card-deck">
+
+      <div class="carousel-container col-10">
           <canvas id="pdf-canvas"></canvas>
           <div class="controls">
               <button id="prev-btn" onclick="prevPage()">Previous</button>
               <button id="next-btn" onclick="nextPage()">Next</button>
           </div>
       </div>
-      <div>
-        <button id="brd1_button" onclick="getPDF('./resources/Julia DiTomas Board 1 Report.pdf')">Board 1 Report</button>
-        <button id="brd2_button" onclick="getPDF('./resources/Julia DiTomas Board 2 Report.pdf')">Board 2 Report</button>
-        <button id="lab2_button" onclick="getPDF('./resources/Julia DiTomas - ECEN 3730 Lab 2.pdf')">Lab 2 Report</button>
-        <button id="lab5_button" onclick="getPDF('./resources/ECEN 3730 Lab 5 - Julia DiTomas.pdf')">Lab 5 Report</button>
-        <button id="lab15_button" onclick="getPDF('./resources/Julia DiTomas Lab 15 ECEN 3730.pdf')">Lab 15 Report</button>
-        <button id="lab16_button" onclick="getPDF('./resources/Julia DiTomas Lab 16 ECEN 3730.pdf')">Lab 16 Report</button>
+      <div class="col-2">
+        <button id="brd1_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas Board 1 Report.pdf')">Board 1 Report</button>
+        <button id="brd2_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas Board 2 Report.pdf')">Board 2 Report</button>
+        <button id="lab2_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas - ECEN 3730 Lab 2.pdf')">Lab 2 Report</button>
+        <button id="lab5_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/ECEN 3730 Lab 5 - Julia DiTomas.pdf')">Lab 5 Report</button>
+        <button id="lab15_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas Lab 15 ECEN 3730.pdf')">Lab 15 Report</button>
+        <button id="lab16_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas Lab 16 ECEN 3730.pdf')">Lab 16 Report</button>
 
       </div> 
+    </div> 
+
 
        <!-- Footer -->
   <div class="footer">
