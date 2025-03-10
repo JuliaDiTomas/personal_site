@@ -84,7 +84,7 @@
       </a>
     </div>
   </nav>
-  <div class="row card-deck">
+  <div class="row card-deck" style="width:100%">
 
       <div class="carousel-container col-10">
           <canvas id="pdf-canvas"></canvas>
@@ -93,7 +93,7 @@
               <button id="next-btn" onclick="nextPage()">Next</button>
           </div>
       </div>
-      <div class="col-2">
+      <div class="col-2" style="position:relative; right:50px">
         <button id="brd1_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas Board 1 Report.pdf')">Board 1 Report</button>
         <button id="brd2_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas Board 2 Report.pdf')">Board 2 Report</button>
         <button id="lab2_button" class="btn btn-info" style="margin-top:10px" onclick="getPDF('./resources/Julia DiTomas - ECEN 3730 Lab 2.pdf')">Lab 2 Report</button>
